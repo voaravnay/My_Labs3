@@ -63,7 +63,7 @@ int main(void) {
 
 
         if (n == m) {
-            array = (int*)malloc(m * sizeof(int));
+            array = (int*)realloc(array,m * sizeof(int));
         }
         for (j = 0; j < m; j++) {
 
